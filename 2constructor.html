@@ -1,0 +1,16 @@
+<script>
+    class tv {                      //storage
+       constructor(){
+        console.log("I am constructor and i get called after creating the instance of class");
+        this.channel = "CartoonNetwork"
+       }
+        volume(){
+       console.log("dolby sound");
+       console.log(this.channel);
+   }
+   }
+   var rem = new tv(); //constructor will be invoked implicitly
+  // var rem1 = tv();   // new keyword is compulsory to invoked the constructor
+   rem.volume();
+   
+</script>

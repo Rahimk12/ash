@@ -1,0 +1,25 @@
+<script>
+    class a {
+        myFun1(){
+            console.log("class a");
+        }
+    }
+    class b extends a {
+        myFun2(){
+            console.log("class b");
+        }
+        myFun1(){
+            super.myFun1();
+            console.log("class b's myFun2");
+        }
+    }
+    var rem = new b;
+    console.log(rem);
+    rem.myFun1();
+    rem.myFun2();
+
+</script>
+<!-- single level inheritance -->
+<!-- if your child class method has same name like parent class method then
+    your child class method will be invoked (method overriding) -->
+<!-- to overcome this super keyword is used to call parent class method -->
